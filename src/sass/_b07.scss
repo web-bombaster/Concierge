@@ -1,0 +1,48 @@
+.b07 {
+    padding-top: 80px;
+    padding-bottom: 115px;
+}
+.b07__container {
+}
+.container {
+}
+.b07__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.b07-box {
+}
+.b07-box__text {
+    @include resetFirstLastMargin;
+    flex-basis: 50%;
+    flex-shrink: 0;
+
+    font-size: 18px;
+
+    padding-right: 85px;
+
+    b {
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+.b07__title {
+    margin-bottom: 42px;
+}
+.b-title {
+}
+.b07-box__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-basis: 50%;
+    flex-shrink: 0;
+
+    img {        
+        max-width: 326px;
+        width: 100%;
+        height: auto;
+    }
+}

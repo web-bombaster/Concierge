@@ -1,0 +1,82 @@
+.b04 {
+    padding-top: 223px;
+    padding-bottom: 74px;
+
+    background-image: url('../img/b04-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.b04__container {
+}
+.container {
+}
+.b04__box {
+}
+.b04-box {
+    margin-bottom: 120px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    max-width: 890px;
+}
+.b04-box__title {
+    margin: 0;
+}
+.b-title {
+}
+.b04-box__descr {
+    font-size: 20px;
+
+    @include resetFirstLastMargin;
+}
+.b04-box__btn {
+    align-self: flex-start;
+}
+.btn {
+}
+.b04__advantages {
+}
+.b04-advantages {
+    display: flex;
+    gap: 40px;
+
+    max-width: 1291px;
+    margin-left: auto;
+    margin-right: auto;
+
+    counter-reset: myCounter;
+}
+.b04-advantages__item {
+    padding-top: 75px;
+    padding-left: 74px;
+
+    position: relative;
+
+    &::before {
+		counter-increment: myCounter;
+		content: counter(myCounter);
+
+        position: absolute;
+        left: 0px;
+        top: -18px;
+
+        font-family: var(--font3);
+        font-size: 145px;
+        font-weight: 700;
+
+        color: rgba(#fff, 16%);
+    }
+}
+.b04-advantages__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.b04-advantages__descr {
+    margin: 0;
+}

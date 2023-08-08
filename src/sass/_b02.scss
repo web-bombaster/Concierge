@@ -1,0 +1,124 @@
+.b02 {
+    position: relative;
+
+    padding-top: 146px;
+    padding-bottom: 190px;
+
+    background-image: url(../img/b02-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+        width: 100%;
+        height: 100%;
+        
+        background: linear-gradient(0deg, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 80%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+        width: 100%;
+        height: 100%;
+        
+        background: linear-gradient(180deg, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 50%);
+    }
+}
+.b02__container {
+    position: relative;
+    z-index: 2;
+}
+.container {
+}
+.b02__title {
+    margin: 0 auto 78px;
+    max-width: 1138px;
+    
+    text-align: center;
+}
+.b-title {
+}
+.b02__box {
+    // display: grid;
+    // grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px 65px;
+
+    max-width: 1054px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.b02-box {
+}
+.b02-box__left {
+    // display: flex;
+    // flex-direction: column;
+    gap: 67px 0;
+    
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    width: 390px;
+}
+.b02-box__left-row {
+}
+.b02-box__digit {
+    position: relative;
+    padding-right: 32px;
+
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.3;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        
+        width: 1px;
+        height: 70px;
+        
+        transform: translateY(-50%);
+        background-color: #afafaf;
+    }
+
+    span {
+        font-size: 30px;
+    }
+}
+.b02-box__name {
+    padding-left: 32px;
+    max-width: 210px;
+
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.b02-box__right {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.b02-box__text {
+    h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    @include resetFirstLastMargin;
+}

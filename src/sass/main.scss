@@ -1,13 +1,13 @@
+// Свои миксины
+// @import '_smart-grid';
+@import '_mixins/mixins'; // свои миксины
+
 // Переменные
 @import "_vars";
 
 // Нормализация
 @import '_preloader';
 @import '_normalize';
-
-// Смартгрид и свои миксины
-// @import '_smart-grid';
-// @import '_mixins/mixins'; // свои миксины
 
 // Шрифты
 // @import "_fonts";
@@ -19,6 +19,18 @@
 // Свои общие стили
 @import "_main";
 @import "_burger";
+@import "_header";
+@import "_b01";
+@import "_b02";
+@import "_b03";
+@import "_b04";
+@import "_b05";
+@import "_b06";
+@import "_b07";
+@import "_b08";
+@import "_b09";
+@import "_b10";
+@import "_scrollbar";
 
 
 // Стили текущего проекта

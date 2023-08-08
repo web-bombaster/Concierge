@@ -1,0 +1,38 @@
+.b09 {
+}
+.b09__container {
+}
+.container {
+}
+.b09__title {
+    margin-top: 0;
+    margin-bottom: 63px;
+    text-align: center;
+}
+.b-title {
+}
+.b09__box {
+}
+.b09-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 67px;
+}
+.b09-box__img {
+    flex-basis: 50%;
+    flex-shrink: 0;
+
+    img {
+        border-radius: var(--brs);
+    }
+}
+.b09-box__text {
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+.b09__btn {
+    margin-top: 34px;
+}
+.btn {
+}

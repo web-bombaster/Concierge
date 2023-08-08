@@ -19,6 +19,8 @@ body {
 	font-size: 10px;
 
 	text-rendering: auto;
+
+	scroll-behavior: smooth;
 }
 
 body {
@@ -31,15 +33,18 @@ body {
 	min-height: 100vh;
 	overflow-x: hidden;
 
-	color: var(--color-text);
-
-	font-family: var(--font-family);
+	color: var(--color-text);	
+	font-family: var(--font1);
 	line-height: 1.5;
 	font-size: 1.6rem;
+
+	background-color: var(--bg-color);
 
 	/*Перенос длинных слов*/
 	overflow-wrap: break-word;
 	word-wrap: break-word;
+
+	min-height: 1600px;
 
 	&.toggle {
 		height: 100vh;
@@ -52,15 +57,26 @@ body {
 	transform: scale(0);
 }
 
-.container {
+.container, .full-container {
 	width: 100%;
-	max-width: 156rem;
+	max-width: 122.6rem;
 	margin: 0 auto;
-	padding: 0 3rem;
+	padding: 0 1.5rem;
 
-	@media screen and (max-width: $break_md) {
+	@media screen and (max-width: $b992) {
 		padding: 0 1.5rem;
 	}
+}
+
+.full-container {
+	max-width: 162rem;
+}
+
+.b-title {	
+	font-family: var(--font2);
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 1.3;
 }
 
 a {
@@ -132,11 +148,11 @@ ul:not([class]) {
 	font-weight: 600;
 	text-transform: uppercase;
 
-	@media screen and (max-width: $break_md) {
+	@media screen and (max-width: $b992) {
 		font-size: 2.6rem;
 	}
 
-	@media screen and (max-width: $break_sm) {
+	@media screen and (max-width: $b768) {
 		font-size: 2.2rem;
 	}
 }
@@ -148,11 +164,11 @@ ul:not([class]) {
 	line-height: 1.16;
 	font-weight: 600;
 
-	@media screen and (max-width: $break_lg) {
+	@media screen and (max-width: $b1200) {
 		font-size: 2rem;
 	}
 
-	@media screen and (max-width: $break_md) {
+	@media screen and (max-width: $b992) {
 		font-size: 1.8rem;
 	}
 }
@@ -170,7 +186,7 @@ h3:not([class]) {
 }
 
 .hidden-text {
-	@media screen and (max-width: $break_sm) {
+	@media screen and (max-width: $b768) {
 		display: none;
 
 		&.active {
@@ -196,7 +212,7 @@ h3:not([class]) {
 	border: none;
 	background-color: transparent;
 
-	@media screen and (max-width: $break_sm) {
+	@media screen and (max-width: $b768) {
 		display: inline-block;
 	}
 }
@@ -219,7 +235,7 @@ h3:not([class]) {
 	z-index: 1;
 	cursor: pointer;
 
-	@media screen and (max-width: $break_sm) {
+	@media screen and (max-width: $b768) {
 		height: 3.2rem;
 		width: 3.2rem;
 	}
