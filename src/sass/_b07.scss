@@ -7,11 +7,16 @@
 .container {
 }
 .b07__box {
+}
+.b07-box {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-}
-.b07-box {
+
+    @media screen and (max-width: $b768) {
+        flex-direction: column;
+        gap: 80px;
+    }
 }
 .b07-box__text {
     @include resetFirstLastMargin;
@@ -22,13 +27,29 @@
 
     padding-right: 85px;
 
+    @media screen and (max-width: $b1200) {
+        padding-right: 0;
+    }
+
+    @media screen and (max-width: $b768) {
+        font-size: 16px;
+    }
+
     b {
         font-size: 22px;
         font-weight: 500;
+
+        @media screen and (max-width: $b768) {
+            font-size: 18px;
+        }
     }
 }
 .b07__title {
     margin-bottom: 42px;
+
+    @media screen and (max-width: $b768) {
+        margin-bottom: 20px;
+    }
 }
 .b-title {
 }

@@ -7,6 +7,12 @@
     background-size: cover;
     background-position: center;
 
+    @media screen and (max-width: $b768) {
+        padding-top: 120px;
+        padding-bottom: 70%;
+        background-image: url('../img/b06-bg-mob.jpg');
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -17,6 +23,10 @@
         height: 100%;
         
         background: linear-gradient(0deg, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 80%);
+
+        @media screen and (max-width: $b768) {
+            display: none;
+        }
     }
 
     &::after {

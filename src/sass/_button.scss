@@ -23,7 +23,10 @@
 	cursor: pointer;
 
 	@media screen and (max-width: $b768) {
+		padding: 16px 25px 16px;
+		min-width: 270px;
 		
+		font-size: 14px;
 	}
 }
 

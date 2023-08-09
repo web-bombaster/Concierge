@@ -8,6 +8,19 @@
     background-size: cover;
     background-position: center;
 
+    @media screen and (max-width: $b992) {
+        padding-top: 120px;
+    }
+
+    @media screen and (max-width: $b768) {
+        background-image: url('../img/b04-bg-mob-2.jpg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        padding-bottom: 0;
+        margin-bottom: 120px;
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -48,6 +61,15 @@
     gap: 45px;
 
     max-width: 890px;
+
+    @media screen and (max-width: $b992) {
+        max-width: 760px;
+    }
+
+    @media screen and (max-width: $b768) {
+        margin-bottom: 340px;
+        gap: 20px;
+    }
 }
 .b04-box__title {
     margin: 0;
@@ -58,9 +80,21 @@
     font-size: 20px;
 
     @include resetFirstLastMargin;
+
+    @media screen and (max-width: $b992) {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: $b768) {
+        font-size: 16px;
+    }
 }
 .b04-box__btn {
     align-self: flex-start;
+
+    @media screen and (max-width: $b768) {
+        margin-top: 10px;
+    }
 }
 .btn {
 }
@@ -75,12 +109,29 @@
     margin-right: auto;
 
     counter-reset: myCounter;
+
+    @media screen and (max-width: $b992) {
+        gap: 20px;
+    }
+
+    @media screen and (max-width: $b768) {
+        flex-direction: column;
+    }
 }
 .b04-advantages__item {
     padding-top: 75px;
     padding-left: 74px;
 
     position: relative;
+
+    @media screen and (max-width: $b992) {
+        padding-top: 24px;
+        padding-left: 40px;
+    }
+
+    @media screen and (max-width: $b768) {
+        padding-top: 14px;
+    }
 
     &::before {
 		counter-increment: myCounter;
@@ -95,6 +146,10 @@
         font-weight: 700;
 
         color: rgba(#fff, 16%);
+
+        @media screen and (max-width: $b992) {
+            font-size: 70px;
+        }
     }
 }
 .b04-advantages__title {
@@ -104,7 +159,20 @@
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
+
+    @media screen and (max-width: $b992) {
+        margin-bottom: 14px;
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: $b768) {
+        font-size: 16px;
+    }
 }
 .b04-advantages__descr {
     margin: 0;
+
+    @media screen and (max-width: $b768) {
+        font-size: 14px;
+    }
 }

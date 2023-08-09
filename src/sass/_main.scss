@@ -75,6 +75,18 @@ body {
 	font-size: 50px;
 	font-weight: 700;
 	line-height: 1.3;
+
+	@media screen and (max-width: $b992) {
+		font-size: 42px;
+	}
+
+	@media screen and (max-width: $b768) {
+		font-size: 32px;
+	}
+
+	@media screen and (max-width: $b480) {
+		font-size: 26px;
+	}
 }
 
 a {

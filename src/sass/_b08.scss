@@ -51,6 +51,11 @@
 .b08-box {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
+
+    @media screen and (max-width: 560px) {
+        flex-direction: column;
+    }
 }
 .b08-box__col {
 }
@@ -60,12 +65,21 @@
     flex-direction: column;
 
     max-width: 524px;
+    width: calc((100% - 30px) / 2);
 
     @include resetFirstLastMargin;
 
     border-radius: var(--brs);
     border: 1px solid #d9d9d9;
     background-color: rgba(#d9d9d9, 4%);
+
+    @media screen and (max-width: $b768) {
+        padding: 25px 15px 52px;
+    }
+
+    @media screen and (max-width: 560px) {
+        width: 100%;
+    }
 }
 .b08-col__title {
     margin-bottom: 5px;
@@ -77,9 +91,19 @@
 .b08-col__descr {
     @include resetFirstLastMargin;
 
+    @media screen and (max-width: $b768) {
+        // display: flex;
+        // flex-direction: column;
+        font-size: 14px;
+    }
+
     b {
         font-size: 18px;
         font-weight: 500;
+
+        @media screen and (max-width: $b768) {
+            font-size: 14px;
+        }
     }
 
     ul {
@@ -90,10 +114,23 @@
     .cost {
         margin-bottom: 40px;
         font-weight: 600;
+
+        @media screen and (max-width: $b768) {
+            text-align: center;
+        }
     }
 }
 .b08__btn {
     margin-bottom: 23px;
+
+    @media screen and (max-width: $b768) {
+        min-width: initial;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 560px) {
+        // max-width: 140px;
+    }
 }
 .btn {
 }
@@ -102,6 +139,10 @@
 
     position: relative;
     display: inline-flex;
+
+    @media screen and (max-width: $b768) {
+        
+    }
 
     &:hover {
         text-decoration: underline;
