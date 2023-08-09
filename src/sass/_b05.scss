@@ -1,0 +1,107 @@
+.b05 {
+}
+.b05__container {
+}
+.container {
+}
+.b05__title {
+    margin-top: 0;
+    margin-bottom: 48px;
+    text-align: center;
+}
+.b05-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.b05__slider {
+}
+.b05-slider {
+    &.swiper {
+        overflow: inherit;
+    }
+}
+.b05-slider__wrapper {
+}
+.b05-slider__item {    
+    padding: 56px 26px 48px 42px;
+    background-color: #1F1F1F;
+    border-radius: var(--brs);
+    overflow: hidden;
+    
+    width: 694px;
+}
+.b05-story {
+}
+.b05-story__box {
+    // position: relative;
+    padding-left: 10px;
+    max-height: 430px;
+    overflow-y: auto;
+
+
+}
+.b05-story__title {
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 11px;
+    padding-bottom: 45px;
+    
+    font-family: var(--font2);
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 700;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        bottom: 0;
+        
+        width: 35px;
+        height: 35px;
+        
+        background-image: url('../img/icons/quote.svg');
+        background-size: cover;
+    }
+}
+.b05-story__text {
+    padding-bottom: 150px;
+    @include resetFirstLastMargin;
+    
+    font-size: 18px;    
+    
+    position: relative;
+
+    &::after {
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 0;
+        
+        width: 100%;
+        height: 100%;
+        
+        background: linear-gradient(0deg, rgba(31,31,31,1) 10%, rgba(31,31,31,0) 50%);
+        pointer-events: none;
+    }
+
+    p {
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+    }
+
+}
+
+.b05-slider-pagination {
+    margin-top: 10px;
+
+    font-family: var(--font1);
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+
+    .swiper-pagination-total {
+        font-size: 30px;
+    }
+}

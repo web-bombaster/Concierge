@@ -7,13 +7,14 @@
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
 	width: 8px;
-
+	
 	@media screen and (max-width: $b768) {
 		width: 6px;
 	}
 }
 
 *::-webkit-scrollbar-track {
+	border-radius: 6px;
 	background: #f6f6f6;
 }
 

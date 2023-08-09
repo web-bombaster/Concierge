@@ -3,6 +3,33 @@
 
 function initSwiper() {
 
+	if (document.querySelector('.jsB05Slider')) {
+		const jsB10Slider = new Swiper('.jsB05Slider', {
+			spaceBetween: 10,
+			slidesPerView: 1.1,
+			centeredSlides: true,
+			// loop: true,
+			breakpoints: {
+				500: {
+					slidesPerView: 1.4,
+					spaceBetween: 10,
+				},
+				768: {
+					slidesPerView: 2.4,
+					spaceBetween: 20,
+				},
+				1401: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+			},
+			pagination: {
+				el: ".b05-slider-pagination",
+				type: "fraction",
+			},
+		});
+	};
+
 	if (document.querySelector('.jsB10Slider')) {
 		const jsB10Slider = new Swiper('.jsB10Slider', {
 			spaceBetween: 10,
@@ -58,54 +85,6 @@ function initSwiper() {
 		});
 	};
 
-	if (document.querySelector('.jsHeroSlider')) {
-		const prodSliderInner = new Swiper('.jsHeroSlider', {
-			spaceBetween: 20,
-			slidesPerView: 1,
-			loop: true,
-			pagination: {
-				el: ".hero-slider__pagination",
-			},
-			navigation: {
-				nextEl: ".hero-slider__next",
-				prevEl: ".hero-slider__prev",
-			},
-		});
-	};
-
-
-
-	if (document.querySelector('.jsBrandsList')) {
-		const brandsList = new Swiper('.jsBrandsList', {
-			// slidesPerView: 5,
-			loop: true,
-			spaceBetween: 20,
-			autoplay: {
-				delay: 2500,
-			},
-			navigation: {
-				nextEl: '.brands__button-next',
-				prevEl: '.brands__button-prev',
-			},
-
-			breakpoints: {
-				319: {
-					slidesPerView: 2,
-				},
-
-				767: {
-					slidesPerView: 3,
-				},
-
-				991: {
-					slidesPerView: 4,
-				},
-				1199: {
-					slidesPerView: 5,
-				},
-			},
-		});
-	};
 };
 
 // window.addEventListener("resize", initSwiper);
