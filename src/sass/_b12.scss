@@ -32,6 +32,28 @@
 
     .half-container {
         padding-left: 175px;
+        padding-right: 15px;
+
+        @media screen and (max-width: 1500px) {
+            padding-left: 80px;
+        }
+
+        @media screen and (max-width: $b1200) {
+            padding-left: 30px;
+        }
+
+        @media screen and (max-width: $b768) {
+            padding-left: 0;
+            padding-right: 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media screen and (max-width: $b480) {
+            align-items: flex-start;
+        }
     }
 }
 .b12-box {
@@ -47,6 +69,10 @@
     background-image: url('../img/b12.jpg');
     background-size: cover;
     background-position: center;
+
+    @media screen and (max-width: $b768) {
+        display: none;
+    }
 }
 .b12-box__right {
     position: relative;
@@ -57,6 +83,17 @@
 
     flex-basis: 50%;
     flex-shrink: 0;
+
+    @media screen and (max-width: $b1200) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media screen and (max-width: $b768) {
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-basis: 100%;
+    }
 }
 
 

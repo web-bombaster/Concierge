@@ -120,15 +120,32 @@
 
 	.nav-list {
 		display: none;
+		
 		position: absolute;
-		padding: 20px;
-		width: 300px;
-		background-color: var(--bg-color);
-
-		border-radius: var(--brs);
-		border: 1px solid #fff;
-
+		z-index: 2;
+		
+		// padding: 20px;
+		padding-top: 40px;
+		width: 270px;
+		
+		// border: 1px solid #fff;
+		
 		font-size: 16px;
+		
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			left: -15px;
+			top: 10px;
+			
+			width: 300px;
+			height: calc(100% + 20px);
+			
+			// background-color: red;
+			background-color: var(--bg-color);
+			border-radius: var(--brs);
+		}
 	}
 
 	.nav-list__item {

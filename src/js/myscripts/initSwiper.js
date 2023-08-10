@@ -20,11 +20,11 @@ function initSwiper() {
 	if (document.querySelector('.jsB10Slider')) {
 		const jsB10Slider = new Swiper('.jsB10Slider', {
 			spaceBetween: 10,
-			slidesPerView: 1.1,
+			slidesPerView: 1.05,
 			// loop: true,
 			breakpoints: {
 				500: {
-					slidesPerView: 1.4,
+					slidesPerView: 1.8,
 					spaceBetween: 10,
 				},
 				768: {
@@ -50,12 +50,12 @@ function initSwiper() {
 			loop: true,
 			breakpoints: {
 				500: {
-					slidesPerView: 2.2,
+					slidesPerView: 1.8,
 					spaceBetween: 10,
 					loop: true,
 				},
 				768: {
-					slidesPerView: 3.2,
+					slidesPerView: 2.4,
 					spaceBetween: 20,
 					loop: true,
 				},

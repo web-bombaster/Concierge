@@ -20,8 +20,7 @@
 }
 .b07-box__text {
     @include resetFirstLastMargin;
-    flex-basis: 50%;
-    flex-shrink: 0;
+    width: calc((100% - 30px) / 2);
 
     font-size: 18px;
 
@@ -32,6 +31,7 @@
     }
 
     @media screen and (max-width: $b768) {
+        width: 100%;
         font-size: 16px;
     }
 
@@ -58,8 +58,11 @@
     align-items: center;
     justify-content: center;
 
-    flex-basis: 50%;
-    flex-shrink: 0;
+    width: calc((100% - 30px) / 2);
+
+    @media screen and (max-width: $b768) {
+        width: 100%;
+    }
 
     img {        
         max-width: 326px;

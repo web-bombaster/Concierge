@@ -4,6 +4,11 @@
     
     max-width: 100%;
     overflow: hidden;
+
+    @media screen and (max-width: $b768) {
+        padding-top: 51px;
+        margin-bottom: 110px;
+    }
 }
 .b10__container {
 }
@@ -13,6 +18,10 @@
     margin-top: 0;
     margin-bottom: 62px;
     text-align: center;
+
+    @media screen and (max-width: $b768) {
+        margin-bottom: 20px;
+    }
 }
 .b-title {
 }
@@ -35,11 +44,19 @@
 
     border-radius: var(--brs);
     margin-bottom: 28px;
+
+    @media screen and (max-width: $b768) {
+        margin-bottom: 20px;
+    }
 }
 .b10-item__date {
     display: block;
     margin-bottom: 21px;
     font-size: 14px;
+
+    @media screen and (max-width: $b768) {
+        margin-bottom: 15px;
+    }
 }
 .b10-item__title {
     margin-bottom: 32px;
@@ -47,6 +64,10 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1.35;
+
+    @media screen and (max-width: $b768) {
+        font-size: 16px;
+    }
 }
 .b10-item__btn {
     min-width: 218px;

@@ -1,5 +1,9 @@
 .b11 {
     margin-bottom: 110px;
+
+    @media screen and (max-width: $b768) {
+        margin-bottom: 42px;
+    }
 }
 .b11__container {
 }
@@ -10,10 +14,18 @@
     margin-bottom: 58px;
 
     text-align: center;
+
+    @media screen and (max-width: $b768) {
+        margin-bottom: 20px;
+    }
 }
 .b-title {
 }
 .b11__box {
+    @media screen and (max-width: $b768) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 .b11-box {
 }
