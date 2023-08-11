@@ -23,3 +23,28 @@
 	border-radius: 6px;
 	border: 0px solid #ffffff;
 }
+
+.mobile-menu {
+	scrollbar-width: auto;
+	scrollbar-color: #303030 #161616;
+
+	&::-webkit-scrollbar {
+		width: 8px;
+		
+		@media screen and (max-width: $b768) {
+			width: 6px;
+		}
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: 6px;
+		background: #161616;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #303030;
+		border-radius: 6px;
+		border: 0px solid #ffffff;
+	}
+}
+
