@@ -149,3 +149,38 @@
         }
     }
 }
+
+.jsB05Slider__prev,
+.jsB05Slider__next {
+    position: absolute;
+    bottom: 30px;
+
+    width: 40px;
+    height: 15px;
+
+    background-image: url('../img/icons/arrow-right.svg');
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: $b768) {
+        bottom: 20px;
+    }
+}
+
+.jsB05Slider__prev {
+    left: calc(50% - 105px);
+    transform: translateX(-50%) rotate(180deg);
+
+    @media screen and (max-width: $b768) {
+        left: calc(50% - 85px);
+    }
+}
+
+.jsB05Slider__next {
+    left: calc(50% + 105px);
+    transform: translateX(-50%);
+
+    @media screen and (max-width: $b768) {
+        left: calc(50% + 85px);
+    }
+}

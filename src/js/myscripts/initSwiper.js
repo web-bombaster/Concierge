@@ -10,6 +10,11 @@ function initSwiper() {
 				el: ".b05-slider-pagination",
 				type: "fraction",
 			},
+
+			navigation: {
+				nextEl: ".jsB05Slider__next",
+				prevEl: ".jsB05Slider__prev",
+			},
 		});
 	};
 
@@ -31,10 +36,6 @@ function initSwiper() {
 					slidesPerView: 2.43,
 					spaceBetween: 20,
 				},
-			},
-			navigation: {
-				nextEl: ".products-list__next",
-				prevEl: ".products-list__prev",
 			},
 		});
 	};

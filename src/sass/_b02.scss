@@ -150,13 +150,13 @@
 }
 .b02-box__name {
     padding-left: 32px;
-    max-width: 210px;
-
+    
     font-size: 22px;
     font-weight: 500;
     line-height: 1.2;
-
+    
     @media screen and (max-width: $b992) {
+        max-width: 210px;
         font-size: 18px;
     }
 
