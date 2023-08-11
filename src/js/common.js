@@ -8,7 +8,5 @@ document.addEventListener(
 		// include './myscripts/form.js'
 		// include './myscripts/mobileMenuPanel.js'
 		// include './myscripts/menu.js'
-		// -include './myscripts/accordeon.js'
-		// -include './myscripts/blazy-init.js'
 	}
 );

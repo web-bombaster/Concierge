@@ -1,4 +1,3 @@
-// Переключаем класс toggle элемента по клику на этот же элемент. Параметр - классэлемента
 let elementToggle = function(element) {
     if (document.querySelector(element)) {
         document.addEventListener('click', function(e) {
@@ -9,12 +8,9 @@ let elementToggle = function(element) {
         });
     };
 };
-
 elementToggle('.footer__col');
-// elementToggle('.nav-list__item--dropdown');
 
 
-// Переключатель класса toggle у элемента по клику на другом элементе. Параметры - класс элемента по которому кликаем и класс элемента, которому переключаем класс toggle
 let classToggler = function(elementBtn, elementTarget) {
     if (document.querySelector(elementBtn) && document.querySelector(elementTarget)) {
         document.querySelector(elementBtn).addEventListener('click', function () {
@@ -25,10 +21,8 @@ let classToggler = function(elementBtn, elementTarget) {
 };
 
 
-// Функция для перемещения элемента в другой элемент. Параметры: куда перемещаем, способ перемещения, что перемещаем
 let movingConstructor = function(to, metod, block) {
-    if (!(document.querySelector(block) && document.querySelector(to))) {
-        console.log("переноса не будт");
+    if (!(document.querySelector(block) && document.querySelector(to))) {        
         return;
     } else {
         switch (metod) {
@@ -52,9 +46,8 @@ let movingConstructor = function(to, metod, block) {
 };
 
 
-// функция будет перемещать блок в указанное место при определенной ширине экрана
 let moving = function () {
-    const windowWidth = window.innerWidth; // ширина экрана
+    const windowWidth = window.innerWidth;
     
     if (windowWidth <= 1200) {
         movingConstructor('.mobile-menu__wrapper', 'append', '.jsMenu');

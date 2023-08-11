@@ -1,6 +1,3 @@
-// Инициализация слайдера swiper
-// https://swiperjs.com/
-
 function initSwiper() {
 
 	if (document.querySelector('.jsB05Slider')) {
@@ -8,7 +5,6 @@ function initSwiper() {
 			spaceBetween: 10,
 			slidesPerView: 1,
 			centeredSlides: true,
-			// loop: true,
 
 			pagination: {
 				el: ".b05-slider-pagination",
@@ -21,7 +17,7 @@ function initSwiper() {
 		const jsB10Slider = new Swiper('.jsB10Slider', {
 			spaceBetween: 10,
 			slidesPerView: 1.05,
-			// loop: true,
+
 			breakpoints: {
 				500: {
 					slidesPerView: 1.8,
@@ -74,11 +70,9 @@ function initSwiper() {
 
 };
 
-// window.addEventListener("resize", initSwiper);
+
 window.addEventListener("resize", function () {
-	// setTimeout(initSwiper, 200);
 	initSwiper();
-	// swiper.init();
 });
 
 initSwiper();
