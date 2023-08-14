@@ -1,6 +1,10 @@
 .b07 {
     padding-top: 85px;
     padding-bottom: 115px;
+
+    @media screen and (max-width: $b768) {
+        padding-bottom: 0;
+    }
 }
 .b07__container {
     &.container {
@@ -63,6 +67,11 @@
 
     @media screen and (max-width: $b768) {
         width: 100%;
+    }
+
+    @media screen and (max-width: $b480) {
+        max-width: 70%;
+        margin: 0 auto;
     }
 
     img {        
