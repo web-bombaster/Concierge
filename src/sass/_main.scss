@@ -57,7 +57,7 @@ body {
 
 .container, .full-container {
 	width: 100%;
-	max-width: 122.6rem;
+	max-width: $container_width;
 	margin: 0 auto;
 	padding: 0 1.5rem;
 
@@ -67,7 +67,17 @@ body {
 }
 
 .full-container {
-	max-width: 162rem;
+	max-width: 167rem;
+	padding: 0 3rem;		
+
+	@media screen and (max-width: $b1200) {
+		padding: 0 1.5rem;		
+	}
+}
+
+.half-container {
+    width: 100%;
+    max-width: calc(100% - (100% - $container_full_width / 2));
 }
 
 .b-title {	
@@ -148,6 +158,10 @@ ul:not([class]) {
 .content {
 	margin-top: 5rem;
 	margin-bottom: 5rem;
+}
+
+header, section, footer {
+	overflow-x: hidden;
 }
 
 .section-header {

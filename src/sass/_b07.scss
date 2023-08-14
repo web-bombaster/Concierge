@@ -1,10 +1,11 @@
 .b07 {
-    padding-top: 80px;
+    padding-top: 85px;
     padding-bottom: 115px;
 }
 .b07__container {
-}
-.container {
+    &.container {
+        max-width: 1104px;
+    }
 }
 .b07__box {
 }
@@ -24,7 +25,7 @@
 
     font-size: 18px;
 
-    padding-right: 81px;
+    // padding-right: 81px;
 
     @media screen and (max-width: $b1200) {
         padding-right: 0;

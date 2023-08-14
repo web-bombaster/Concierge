@@ -98,7 +98,11 @@
 }
 .nav-list__item--offset {
 	// margin-left: 570px;
-	margin-left: auto;
+	margin-left: 330px;
+
+	@media screen and (max-width: 1515px) {
+		margin-left: auto;		
+	}
 }
 .nav-list__link {
 	position: relative;

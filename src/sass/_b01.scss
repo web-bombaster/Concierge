@@ -48,9 +48,11 @@
     display: flex;
     align-items: center;
     height: 100%;
+
+    @include container-middle;
 }
 .b01__box {
-    padding-top: 60px;
+    padding-top: 58px;
     max-width: 636px;
 
     @media screen and (max-width: $b768) {
@@ -67,7 +69,7 @@
 }
 .b01__title {
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 
     @media screen and (max-width: $b480) {
         margin-bottom: 15px;

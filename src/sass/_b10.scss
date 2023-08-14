@@ -1,5 +1,5 @@
 .b10 {
-    padding-top: 95px;
+    padding-top: 97px;
     margin-bottom: 105px;
     
     max-width: 100%;
@@ -11,8 +11,9 @@
     }
 }
 .b10__container {
-}
-.container {
+    &.container {
+        max-width: 1220px;
+    }
 }
 .b10__title {
     margin-top: 0;

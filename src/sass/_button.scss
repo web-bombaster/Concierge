@@ -30,13 +30,9 @@
 	}
 }
 
-.btn:hover:not(:disabled) {
+.btn:hover:not(:disabled), .btn:focus {
 	transform: translateY(-2px);
 	background-color: rgba(#fff, .08);
-}
-
-.btn:focus {
-	background-color: #A3DA37;
 }
 
 .btn:disabled {

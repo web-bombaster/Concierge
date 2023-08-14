@@ -21,3 +21,16 @@
 		}
 	}
 }
+
+@mixin container-middle {
+	max-width: 1515px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	@media screen and (max-width: $b1200) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

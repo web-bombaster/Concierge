@@ -17,15 +17,18 @@
 	}
 }
 .header__container {
-	width: 100%;
-	position: relative;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	@include container-middle;
+	padding: 20px 30px;
+	
+	position: relative;	
+	width: 100%;	
 	min-height: 148px;
 
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+
 
 	@media screen and (max-width: $b992) {
 		padding-top: 10px;
@@ -60,7 +63,10 @@
 	}
 }
 .header__nav {
-	flex-grow: 1;
+	
+	@media screen and (max-width: 1515px) {
+		flex-grow: 1;		
+	}
 
 	@media screen and (max-width: $b1200) {
 		display: none;
@@ -118,6 +124,7 @@
 }
 .header__phone {
 	font-weight: 600;
+	margin-right: auto;
 
 	@media screen and (max-width: $b1200) {
 		display: none;

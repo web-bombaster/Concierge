@@ -8,5 +8,7 @@ document.addEventListener(
 		// include './myscripts/form.js'
 		// include './myscripts/mobileMenuPanel.js'
 		// include './myscripts/menu.js'
+
+		AOS.init();
 	}
 );

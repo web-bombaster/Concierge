@@ -42,23 +42,20 @@ function initSwiper() {
 
 	if (document.querySelector('.jsB11Slider')) {
 		const jsB10Slider = new Swiper('.jsB11Slider', {
-			spaceBetween: 10,
+			spaceBetween: 8,
 			slidesPerView: 1.1,
 			loop: true,
 			breakpoints: {
 				500: {
 					slidesPerView: 1.8,
-					spaceBetween: 10,
 					loop: true,
 				},
 				768: {
 					slidesPerView: 2.4,
-					spaceBetween: 20,
 					loop: true,
 				},
 				1401: {
 					slidesPerView: 4,
-					spaceBetween: 20,
 					loop: false,
 				},
 			},
