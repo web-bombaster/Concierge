@@ -8,6 +8,10 @@
     background-size: cover;
     background-position: center;
 
+    @include retina {
+        background-image: url('../img/b04-bg@2x.jpg');
+    }
+
     @media screen and (max-width: $b992) {
         padding-top: 120px;
     }
@@ -19,6 +23,10 @@
 
         padding-bottom: 0;
         margin-bottom: 120px;
+
+        @include retina {
+            background-image: url('../img/b04-bg-mob-2@2x.jpg') !important;
+        }
     }
 
     &::before {

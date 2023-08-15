@@ -14,7 +14,7 @@
   <body>
     <div class="visible" id="preloader"></div>
     <header class="header header--home">
-      <div class="header__container full-container"><a class="header__logo" href="#"><img src="img/logo.svg" alt=""></a>
+      <div class="header__container" data-aos="fade-down" data-aos-duration="1000"><a class="header__logo" href="#"><img src="img/logo.svg" alt=""></a>
         <button class="mobile-menu-btn burger__menu-btn js-burger jsMobileMenuBtnToggle"><span></span></button>
         <nav class="header__nav nav">
           <ul class="nav__list nav-list jsMenu">
@@ -42,8 +42,8 @@
       </div>
     </header>
     <section class="b01">
-      <div class="b01__container container">
-        <div class="b01__box">
+      <div class="b01__container">
+        <div class="b01__box" data-aos="fade-up" data-aos-duration="2000">
           <h1 class="b01__title b-title">Премиум-консьерж 24/7: реализуем ваши желания</h1>
           <div class="b01__descr">
             <p>Ваш персональный помощник в организации личных и бизнес вопросов. С нами нет ничего невозможного. Скажите что вам нужно, остальное сделаем мы.</p>
@@ -53,8 +53,8 @@
     </section>
     <section class="b02">
       <div class="b02__container container">
-        <h2 class="b02__title b-title">Компания «Luxury World Key Concierge» работает на рынке премиальных консьерж услуг 17 лет</h2>
-        <div class="b02__box b02-box">
+        <h2 class="b02__title b-title" data-aos="fade-up" data-aos-duration="1000">Компания «Luxury World Key Concierge» работает на рынке премиальных консьерж услуг 17 лет</h2>
+        <div class="b02__box b02-box" data-aos="fade-down" data-aos-duration="1800">
           <div class="b02-box__left">
             <div class="b02-box__digit">17&nbsp;<span>лет</span></div>
             <div class="b02-box__name">на рынке консъерж услуг</div>
@@ -84,9 +84,9 @@
       <div class="b03__box b03-box">
         <div class="b03-box__col b03-box__col--left">
           <div class="half-container">
-            <h2 class="b-title">Услуги для жизни</h2>
-            <div class="b03__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</div>
-            <ul class="b03__list">
+            <h2 class="b-title" data-aos="fade-right">Услуги для жизни</h2>
+            <div class="b03__descr" data-aos="fade-right" data-aos-duration="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</div>
+            <ul class="b03__list" data-aos="fade-right" data-aos-duration="800">
               <li class="b03__item"><a class="b03__link" href="#">Путешествия</a></li>
               <li class="b03__item"><a class="b03__link" href="#">VIP-бронирование и билеты</a></li>
               <li class="b03__item"><a class="b03__link" href="#">Детский консьерж</a></li>
@@ -100,9 +100,9 @@
         </div>
         <div class="b03-box__col b03-box__col--right">
           <div class="half-container">
-            <h2 class="b-title">Услуги для бизнеса</h2>
-            <div class="b03__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</div>
-            <ul class="b03__list">
+            <h2 class="b-title" data-aos="fade-left">Услуги для бизнеса</h2>
+            <div class="b03__descr" data-aos="fade-left" data-aos-duration="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</div>
+            <ul class="b03__list" data-aos="fade-left" data-aos-duration="800">
               <li class="b03__item"><a class="b03__link" href="#">Второе гражданство</a></li>
               <li class="b03__item"><a class="b03__link" href="#">Бизнес-консьерж</a></li>
               <li class="b03__item"><a class="b03__link" href="#">Клуб инвестиций</a></li>
@@ -116,14 +116,16 @@
       </div>
     </section>
     <section class="b04">
-      <div class="b04__container container">
-        <div class="b04__box b04-box">
+      <div class="b04__container">
+        <div class="b04__box b04-box" data-aos="fade-up">
           <h2 class="b04-box__title b-title">Мы сделаем все возможное и даже больше, какими бы нестандартными не были ваши запросы</h2>
           <div class="b04-box__descr">
             <p>от покупки кубика рубика в 3 часа ночи до приведения слона на день рождение или бронирования билетов на мероприятие, которых уже нет в продаже</p>
           </div><a class="b04-box__btn btn">Хочу слона</a>
         </div>
-        <ul class="b04__advantages b04-advantages">
+      </div>
+      <div class="container">
+        <ul class="b04__advantages b04-advantages" data-aos="fade-down" data-aos-duration="1000">
           <li class="b04-advantages__item">
             <h3 class="b04-advantages__title">Работаем 24 на 7</h3>
             <p class="b04-advantages__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
@@ -141,9 +143,9 @@
     </section>
     <section class="b05">
       <div class="b05__container container">
-        <h2 class="b05__title b-title">Наши истории</h2>
+        <h2 class="b05__title b-title" data-aos="fade-down" data-aos-duration="1000">Наши истории</h2>
       </div>
-      <div class="b05-box">
+      <div class="b05-box" data-aos="fade-up" data-aos-duration="2000">
         <div class="b05__slider b05-slider swiper jsB05Slider">
           <div class="b05-slider__wrapper swiper-wrapper">
             <div class="b05-slider__item b05-story swiper-slide">
@@ -198,7 +200,7 @@
     </section>
     <section class="b06">
       <div class="b06__container container">
-        <div class="b06__box b06-box">
+        <div class="b06__box b06-box" data-aos="fade-up">
           <h2 class="b06__title b-title">Оставьте все задачи нам и&nbsp;расслабьтесь</h2>
           <div class="b06__descr"> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
@@ -209,21 +211,21 @@
     <section class="b07">
       <div class="b07__container container">
         <div class="b07__box b07-box">
-          <div class="b07-box__text">
+          <div class="b07-box__text" data-aos="fade-up" data-aos-duration="1800">
             <h2 class="b07__title b-title">Философия бренда</h2>
             <p> <b>Первый и главный принцип. Мы достойны доверия наших гостей. Запросы наших клиентов строго конфиденциальны.</b></p>
             <p>Мы не судим. Мы не распространяемся об этом. Ни при каких обстоятельствах мы не разглашаем информацию о наших клиентах</p>
             <p>Мы учим друг друга искать неординарные решения. Вместо того, чтобы зацикливаться на проблемах, мы ищем возможные решения. Каждый запрос — это задача, которую мы решаем с учетом того, что клиент хочет получить в итоге.</p>
           </div>
-          <div class="b07-box__img"><img src="img/logo.svg" alt=""></div>
+          <div class="b07-box__img" data-aos="fade-down" data-aos-duration="1000"><img src="img/logo.svg" alt=""></div>
         </div>
       </div>
     </section>
     <section class="b08">
       <div class="b08__container container">
-        <h2 class="b08__title b-title">Выбирайте лучшее для себя и своей семьи</h2>
+        <h2 class="b08__title b-title" data-aos="fade-down" data-aos-duration="1000">Выбирайте лучшее для себя и своей семьи</h2>
         <div class="b08__box b08-box">
-          <div class="b08-box__col b08-col">
+          <div class="b08-box__col b08-col" data-aos="fade-right" data-aos-duration="1800">
             <h3 class="b08-col__title">Стиль жизни</h3>
             <div class="b08-col__descr">
               <p> <b>Индивидуальный график работы</b></p>
@@ -234,7 +236,7 @@
               <p class="cost">Стоимость рассчитывается индивидуально</p><a class="b08__btn btn" href="#">Оставить зявку</a><a class="b08__whatsapp" href="#">Написать в What’sApp</a>
             </div>
           </div>
-          <div class="b08-box__col b08-col">
+          <div class="b08-box__col b08-col" data-aos="fade-left" data-aos-duration="1800">
             <h3 class="b08-col__title">Бизнесс</h3>
             <div class="b08-col__descr">
               <p> <b>Индивидуальный график работы</b></p>
@@ -250,8 +252,8 @@
     </section>
     <section class="b09">
       <div class="b09__container container">
-        <h2 class="b09__title b-title">Клубная карта</h2>
-        <div class="b09__box b09-box">
+        <h2 class="b09__title b-title" data-aos="fade-up" data-aos-duration="1000">Клубная карта</h2>
+        <div class="b09__box b09-box" data-aos="fade-down" data-aos-duration="1800">
           <div class="b09-box__img"><img src="img/b09.jpg" alt=""></div>
           <div class="b09-box__text">
             <ul>
@@ -266,8 +268,8 @@
     </section>
     <section class="b10">
       <div class="b10__container container">
-        <h2 class="b10__title b-title">LWK медиа</h2>
-        <div class="b10__box b10-box swiper jsB10Slider">
+        <h2 class="b10__title b-title" data-aos="fade-down" data-aos-duration="1800">LWK медиа</h2>
+        <div class="b10__box b10-box swiper jsB10Slider" data-aos="fade-up" data-aos-duration="1000">
           <div class="b10-box__wrapper swiper-wrapper"><a class="b10-box__item b10-item swiper-slide" href="#"><img class="b10-item__img" src="img/b10/01.jpg" alt="">
               <time class="b10-item__date" datetime="2023-07-14 19:00">14.07.2023</time>
               <div class="b10-item__title">Лучшие виды спорта, которые стоит попробовать в Дубаи</div><span class="b10-item__btn btn">Читать</span></a><a class="b10-box__item b10-item swiper-slide" href="#"><img class="b10-item__img" src="img/b10/02.jpg" alt="">
@@ -286,9 +288,9 @@
     </section>
     <section class="b11">
       <div class="b11__container container">
-        <h2 class="b11__title b-title">Мы в Instagram</h2>
+        <h2 class="b11__title b-title" data-aos="zoom-in-up" data-aos-duration="1000">Мы в Instagram</h2>
       </div>
-      <div class="b11__box b11-box swiper jsB11Slider">
+      <div class="b11__box b11-box swiper jsB11Slider" data-aos="zoom-out" data-aos-duration="1000">
         <div class="b11-box__wrapper swiper-wrapper">
           <div class="b11-box__item b11-item swiper-slide"><img class="b11-item__img" src="img/b11/01.jpg" alt=""></div>
           <div class="b11-box__item b11-item swiper-slide"><img class="b11-item__img" src="img/b11/02.jpg" alt=""></div>
@@ -299,8 +301,8 @@
     </section>
     <section class="b12">
       <div class="b12-box">
-        <div class="b12-box__left"></div>
-        <div class="b12-box__right">
+        <div class="b12-box__left" data-aos="fade-down" data-aos-duration="1000"></div>
+        <div class="b12-box__right" data-aos="zoom-out" data-aos-duration="1000">
           <div class="half-container">
             <h2 class="b-title">Остались вопросы?</h2>
             <form class="form b12-form" action="">
@@ -328,7 +330,7 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="footer__container container">
+      <div class="footer__container container" data-aos="zoom-out" data-aos-duration="1000">
         <div class="footer__top"><a class="footer__logo footer__logo" href="#"><img src="img/logo.svg" alt=""></a>
           <div class="footer__col"><span class="footer__title">ABOUT</span>
             <ul class="footer__menu footer-menu">

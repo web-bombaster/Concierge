@@ -70,6 +70,10 @@
     background-size: cover;
     background-position: center;
 
+    @include retina {
+        background-image: url(../img/b12@2x.jpg);
+    }
+
     @media screen and (max-width: $b768) {
         display: none;
     }

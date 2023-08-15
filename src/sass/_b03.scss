@@ -75,6 +75,10 @@
     position: relative;
     background-image: url(../img/b03/b03-bg01.jpg);
 
+    @include retina {
+        background-image: url(../img/b03/b03-bg01@2x.jpg);
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -111,6 +115,10 @@
 }
 .b03-box__col--right {
     background-image: url(../img/b03/b03-bg02.jpg);
+
+    @include retina {
+        background-image: url(../img/b03/b03-bg02@2x.jpg);
+    }
 
     .half-container {
         margin-right: auto;

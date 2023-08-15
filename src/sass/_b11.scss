@@ -1,5 +1,6 @@
 .b11 {
     margin-bottom: 110px;
+    overflow: hidden;
 
     @media screen and (max-width: $b768) {
         margin-bottom: 42px;

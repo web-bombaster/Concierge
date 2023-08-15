@@ -161,11 +161,11 @@
 
         &:hover, &.toggle {
             .nav-list {
-                padding-top: 30px;
-                padding-bottom: 10px;
-                padding-left: 10px;
+                // padding-top: 30px;
+                // padding-bottom: 10px;
+                // padding-left: 10px;
 
-				opacity: 1;
+				// opacity: 1;
             }
         }
     }
@@ -181,14 +181,21 @@
 
     .nav-list__item--dropdown .nav-list {
         position: relative;
-        display: none;
-
+		padding: 0;
+        // display: none;
+		opacity: 0;
 		height: 0;
+		transition: all .25s;
     }
 
     .nav-list__item--dropdown.toggle .nav-list {
-        display: block;
+        // display: block;
+		padding-top: 30px;
+    	padding-bottom: 10px;
+
 		height: auto;
+		opacity: 1;
+		transition: all .25s;
     }
     
     .header__logo {

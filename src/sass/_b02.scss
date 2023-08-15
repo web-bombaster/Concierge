@@ -8,6 +8,10 @@
     background-size: cover;
     background-position: center;
 
+    @include retina {
+        background-image: url(../img/b02-bg@2x.jpg);
+    }
+
     @media screen and (max-width: $b992) {
         padding-bottom: 120px;
     }
@@ -16,11 +20,18 @@
         padding-top: 40px;
         padding-bottom: 70px;
 
-        background-image: url(../img/b02-bg-mob.jpg);
+        background-image: url('../img/b02-bg-mob.jpg');
         background-size: 100% auto;
         background-position: bottom center;
         background-repeat: no-repeat;
+
+        @include retina {
+            background-image: url('../img/b02-bg-mob@2x.jpg') !important;
+        }
+
     }
+
+    
 
     &::before {
         content: '';

@@ -15,6 +15,10 @@
     @media screen and (max-width: $b480) {
         background-image: url(../img/b01-bg-mob.jpg);
         padding-bottom: 40px;
+
+        @include retina {
+            background-image: url(../img/b01-bg-mob@2x.jpg);
+        }
     }
     
 
