@@ -59,6 +59,7 @@
 .b-title {
 }
 .b07-box__img {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,6 +73,22 @@
     @media screen and (max-width: $b480) {
         max-width: 70%;
         margin: 0 auto;
+    }
+
+    &::before {
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        
+        width: 80%;
+        height: 80%;
+
+        border-radius: 50%;
+        background-color: rgba(166, 166, 166, 0.06);
+        filter: blur(167px);
     }
 
     img {        

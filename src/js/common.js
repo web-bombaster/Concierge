@@ -8,7 +8,11 @@ document.addEventListener(
 		// include './myscripts/form.js'
 		// include './myscripts/mobileMenuPanel.js'
 		// include './myscripts/menu.js'
+		// include './myscripts/fullpageInit.js'
 
-		AOS.init();
+		AOS.init({
+			duration: 1200,
+			easing: 'ease',
+		});
 	}
 );

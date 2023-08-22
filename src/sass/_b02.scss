@@ -42,7 +42,7 @@
         width: 100%;
         height: 100%;
         
-        background: linear-gradient(0deg, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 80%);
+        background: linear-gradient(0deg, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 25%);
 
         @media screen and (max-width: $b768) {
             display: none;
@@ -58,7 +58,7 @@
         width: 100%;
         height: 100%;
         
-        background: linear-gradient(180deg, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 50%);
+        background: linear-gradient(180deg, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 25%);
     }
 }
 .b02__container {
