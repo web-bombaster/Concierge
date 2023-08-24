@@ -11,8 +11,8 @@ document.addEventListener(
 		// include './myscripts/fullpageInit.js'
 
 		AOS.init({
-			duration: 1200,
-			easing: 'ease',
+			duration: 1800,
+			// easing: 'ease',
 		});
 	}
 );

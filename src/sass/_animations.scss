@@ -1,0 +1,7 @@
+[data-aos="fade-opacity"] {
+    opacity: 0;
+    transition-property: opacity;
+    &.aos-animate {
+      opacity: 1;
+    }
+  }
