@@ -76,17 +76,22 @@
     &::before {
         position: absolute;
         z-index: -1;
-        left: 50%;
-        top: 50%;
+        left: 55%;
+        top: 64%;
         transform: translate(-50%, -50%);
         content: '';
         
         width: 100%;
-        height: 80%;
+        height: 90%;
 
         border-radius: 50%;
-        background: linear-gradient(180deg, rgba(217, 217, 217, 0.16) 8.85%, rgba(22, 22, 21, 0.00) 100%);
+        background: linear-gradient(180deg, rgba(217, 217, 217, 0.26) 8.85%, rgba(22, 22, 21, 0.00) 100%);
         filter: blur(105.5px);
+
+        @media screen and (max-width: 480px) {
+            top: 77%;
+            background: linear-gradient(180deg, rgba(217, 217, 217, 0.36) 8.85%, rgba(22, 22, 21, 0.00) 100%);
+        }
     }
 
     &::after {
@@ -107,6 +112,7 @@
 
     img {
         border-radius: var(--brs);
+        box-shadow: 0px 0px 4px 0px #000;
     }
 }
 

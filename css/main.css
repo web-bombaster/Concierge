@@ -2116,7 +2116,7 @@ h3:not([class]) {
   width: 80%;
   height: 80%;
   border-radius: 50%;
-  background-color: rgba(166, 166, 166, 0.06);
+  background-color: rgba(166, 166, 166, 0.1);
   filter: blur(167px);
 }
 .b07-box__img img {
@@ -2235,6 +2235,14 @@ h3:not([class]) {
     width: 100%;
   }
 }
+.b08-col .btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.b08-col .btn:hover {
+  transform: translateY(-2px) translateX(-50%);
+}
 
 .b08-col__title {
   margin-bottom: 5px;
@@ -2309,13 +2317,16 @@ h3:not([class]) {
   }
 }
 .b08__whatsapp {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   padding-left: 32px;
   position: relative;
   display: inline-flex;
 }
 @media screen and (max-width: 768px) {
   .b08__whatsapp {
-    align-self: center;
+    align-self: flex-start;
   }
 }
 .b08__whatsapp:hover {
@@ -2408,15 +2419,21 @@ h3:not([class]) {
 .b09-box__img::before {
   position: absolute;
   z-index: -1;
-  left: 50%;
-  top: 50%;
+  left: 55%;
+  top: 64%;
   transform: translate(-50%, -50%);
   content: "";
   width: 100%;
-  height: 80%;
+  height: 90%;
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(217, 217, 217, 0.16) 8.85%, rgba(22, 22, 21, 0) 100%);
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.26) 8.85%, rgba(22, 22, 21, 0) 100%);
   filter: blur(105.5px);
+}
+@media screen and (max-width: 480px) {
+  .b09-box__img::before {
+    top: 77%;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.36) 8.85%, rgba(22, 22, 21, 0) 100%);
+  }
 }
 .b09-box__img::after {
   position: absolute;
@@ -2433,6 +2450,7 @@ h3:not([class]) {
 }
 .b09-box__img img {
   border-radius: var(--brs);
+  box-shadow: 0px 0px 4px 0px #000;
 }
 
 .b09__btn {
@@ -3067,12 +3085,16 @@ h3:not([class]) {
   height: 0;
   position: absolute;
   z-index: 2;
-  overflow: hidden;
   padding-top: 0;
   width: 270px;
   font-size: 16px;
   opacity: 0;
   transition: opacity 0.5s, padding 0.15s;
+}
+@media screen and (max-width: 1200px) {
+  .nav-list__item--dropdown .nav-list {
+    overflow: hidden;
+  }
 }
 .nav-list__item--dropdown .nav-list::after {
   content: "";
